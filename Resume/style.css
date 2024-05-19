@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    border: none;
+    color: black;
+  }
+
+  body {
+    background-color: #e1dbdb; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Styling the main container */
+.main-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px; 
+    width: 80%;    
+    max-width: 1200px; 
+    min-height: 100vh;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+}
+
+.profile-img {
+    width: 135px; 
+    height: 180px; 
+    border: 2px solid #000;
+    margin-bottom: 20px;
+    overflow: hidden; 
+    border-radius: 8px; 
+    margin-right: 3rem;
+}
+
+/* Styling the image inside the frame */
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+#name-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}  
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 3rem;
+    list-style: none;
+}
+.list ul li{
+    font-size: 1.1rem;
+}
+
+.list ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.list ul li a:hover{
+    text-decoration: underline;
+}
+
+.list ul li a:visited{
+    color: black;
+}
+
+.list ul li span{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.list ul li span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* career Objectives heading CSS */
+
+.career-obj h3{
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  margin-top: .8rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.career-obj ul{
+  margin-left: 6rem;
+  margin-top: .5rem;
+}
+
+
+.career-obj p{
+  font-size: 1.1rem;
+}
+
+/* summary css */
+
+.summary h3{
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  margin-top: .8rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.summary ul{
+  margin-left: 6rem;
+  margin-top: .5rem;
+}
+
+.summary p{
+  font-size: 1.1rem;
+}
+/* Technical proficiency css */
+.technical-proficiency h3{
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  margin-top: .8rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.technical-proficiency ul{
+  margin-left: 6rem;
+  margin-top: .5rem;
+}
+
+.technical-proficiency ul li{
+  font-size: 1.1rem;
+}
+.technical-proficiency ul li span{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.technical-proficiency ul li span:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* Educational details */
+
+.educational-qualification h3{
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  margin-top: .8rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.educational-qualification ul{
+  margin-left: 6rem;
+  margin-top: .5rem;
+}
+
+.educational-qualification ul li{
+  font-size: 1.1rem;
+}
+
+/* Project Works CSS */
+.project-work h3{
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  margin-top: .8rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.project-work ul{
+  margin-left: 6rem;
+  margin-top: .5rem;
+}
+
+.project-work ul li{
+  font-size: 1.1rem;
+}
+
+/* Experience css */
+.experience h3{
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  margin-top: .8rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.experience ul{
+  margin-left: 6rem;
+  margin-top: .5rem;
+}
+
+.experience ul li{
+  font-size: 1.1rem;
+  list-style: none;
+}
+
+/* Personal profile */
+.personal-profile {
+  max-width: 600px;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.personal-profile h3 {
+  font-size: 1.5rem;
+  margin-left: 1.7rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.personal-profile .profile-item {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3rem;
+  margin-top: .2rem;
+}
+
+.personal-profile .profile-item span {
+  display: inline-block;
+  width: 220px; 
+  font-size: 1.1rem;
+}
+
+.personal-profile .profile-item span.profile {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Declaaration css */
+.declaration h3{
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  margin-top: .8rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.declaration ul{
+  margin-left: 3rem;
+  margin-top: .5rem;
+}
+
+.declaration ul li{
+  font-size: 1.1rem;
+  list-style: none;
+}
+/* signature */
+.signature {
+    text-align: right;
+    font-family: 'Alex Brush', cursive;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    font-weight: 600;
+    margin-right: 12rem;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .profile-img {
+      margin-right: 0;
+    }
+    
+    .list ul {
+      margin-left: 0;
+    }
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 480px) {
+    .main-container {
+      padding: 10px;
+      margin: 10px;
+      width: 100%;
+    }
+    
+    .profile-img {
+      width: 80px;
+      height: 100px;
+    }
+    
+    #name-heading {
+      font-size: 1.5rem;
+    }
+    
+    .list ul li {
+      font-size: 1rem;
+    }
+  }
+
+  /* General styles for print */
+@media print {
+  /* Ensure the background color and box shadows are not printed */
+  body {
+      background-color: white;
+      -webkit-print-color-adjust: exact;
+  }
+  
+  .main-container {
+      width: 100%;
+      max-width: none;
+      box-shadow: none;
+      padding: 10px;
+      margin: 0;
+  }
+
+  /* Adjust font sizes for print */
+  h3 {
+      font-size: 1.2rem;
+  }
+  
+  .profile-img {
+      width: 100px;
+      height: 120px;
+      margin-bottom: 10px;
+      margin-right: 1rem;
+  }
+  
+  #name-heading {
+      font-size: 1.8rem;
+  }
+  
+  .list ul {
+      margin-left: 1rem;
+  }
+  
+  .list ul li {
+      font-size: 0.9rem;
+  }
+
+  /* Adjustments for sections */
+  .career-obj ul,
+  .summary ul,
+  .technical-proficiency ul,
+  .educational-qualification ul,
+  .project-work ul,
+  .experience ul,
+  .declaration ul {
+      margin-left: 2rem;
+  }
+
+  .personal-profile .profile-item span {
+      width: 180px; 
+  }
+
+  .signature {
+      margin-right: 2rem;
+  }
+  
+  /* Ensure two-column layout */
+  .header, .career-obj, .summary, .technical-proficiency, .educational-qualification, .project-work, .experience, .personal-profile, .declaration {
+      page-break-inside: avoid;
+  }
+  
+  .header, .career-obj, .summary, .technical-proficiency, .educational-qualification, .project-work, .experience, .personal-profile, .declaration {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+  }
+
+  .header {
+      margin-bottom: 0.5rem;
+  }
+  .no-print {
+      display: none;
+  }
+}
+
