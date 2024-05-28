@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-container {
+    width: 30%;
+    height: 100vh;
+    color: white;
+}
+
+.left-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #504136;
+}
+
+.cv-img img {
+  margin-top: 1rem;
+  border: none;
+  border-radius: 50%;
+  width: 200px;
+  height: 210px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.cv-name h3 {
+    font-size: 1.7rem;
+}
+
+.cv-profession p {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact details */
+.headings h3 {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.content-details {
+    background-color: #645039;
+    height: 100vh;
+}
+
+.content-details .list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+
+.list ul li {
+    font-size: 1rem;
+    list-style: none;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.list ul li a {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+.list ul li a i {
+    font-size: 1rem;
+    color: white;
+    background-color: #504136;
+    border-radius: 50%;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+
+.objective h3 {
+    margin-top: 0.5rem;
+    margin-left: 4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.objective p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-right: 2rem;
+}
+
+.technical-skills h3 {
+    margin-top: 0.5rem;
+    margin-left: 4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.technical-skills {
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+}
+
+.skill {
+    margin-top: 0.5rem;
+    margin-bottom: 10px;
+}
+
+.skill label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+.progress-bar {
+    width: 70%;
+    background-color: wheat;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 2rem;
+}
+
+.progress {
+    height: 10px;
+    background-color: #504136;
+    border-radius: 1px;
+}
+
+.right-container {
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    color: black;
+}
+
+.personal-profile {
+    max-width: 600px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.personal-profile h3 {
+    font-size: 1.5rem;
+    margin-left: 1.7rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.personal-profile .profile-item {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-top: 0.2rem;
+}
+
+.personal-profile .profile-item span {
+    display: inline-block;
+    width: 220px;
+    font-size: 1rem;
+}
+
+.personal-profile .profile-item span.profile {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.educational-qualification h3 {
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.educational-qualification ul {
+    margin-left: 6rem;
+    margin-top: 0.3rem;
+}
+
+.educational-qualification ul li {
+    font-size: 1rem;
+    list-style: none;
+}
+
+.educational-qualification ul .education-date {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.educational-qualification ul .education-detail {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.3rem;
+}
+
+.experience h3 {
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.experience ul {
+    margin-left: 6rem;
+    margin-top: 0.3rem;
+}
+
+.experience ul li {
+    font-size: 1rem;
+    list-style: none;
+}
+
+.summary h3 {
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.summary ul {
+    margin-left: 6rem;
+    margin-top: 0.3rem;
+}
+
+.summary ul li {
+    list-style: none;
+}
+
+.summary p {
+    font-size: 1rem;
+}
+
+.project-work h3 {
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
+    text-decoration: underline;
+    color: black; /* Set font color to black */
+}
+
+.project-work ul {
+    margin-left: 6rem;
+    margin-top: 0.3rem;
+}
+
+.project-work ul li {
+    font-size: 1rem;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.project-work ul li a {
+    text-decoration: none; /* Remove underline from anchor tags */
+    color: black;
+}
+
+.declaration h3 {
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.declaration ul {
+    margin-left: 3rem;
+    margin-top: 0.3rem;
+}
+
+.declaration ul li {
+    font-size: 1rem;
+    list-style: none;
+}
+
+.signature {
+    text-align: right;
+    font-family: 'Alex Brush', cursive;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    margin-right: 12rem;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .main-container {
+      flex-direction: column;
+  }
+
+  .left-container, .right-container {
+      width: 100%;
+      height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-container, .right-container {
+      width: 100%;
+      height: auto;
+  }
+
+  .content-details, .technical-skills {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .progress-bar {
+      width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 1rem; /* Optional, keeps the same margin as larger screens */
+}
+
+  .cv-name h3 {
+      font-size: 1.5rem;
+  }
+
+  .cv-profession p {
+      font-size: 1rem;
+  }
+
+  .headings h3, .objective h3, .technical-skills h3 {
+      margin-left: 1rem;
+      font-size: 1.5rem;
+  }
+
+  .skill label, .progress-bar {
+      margin-left: 1rem;
+  }
+
+  .progress-bar {
+      width: 100%;
+  }
+
+  .personal-profile .profile-item {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 1rem;
+  }
+
+  .personal-profile .profile-item span {
+      width: auto;
+      font-size: 0.9rem;
+  }
+
+  .educational-qualification ul, .experience ul, .summary ul, .project-work ul, .declaration ul {
+      margin-left: 2rem;
+  }
+
+  .educational-qualification ul li, .experience ul li, .summary ul li, .project-work ul li, .declaration ul li {
+      font-size: 0.9rem;
+  }
+
+  .signature {
+      font-size: 1rem;
+      margin-right: 1rem;
+  }
+}
+
+/* Media Queries for Printing */
+@media print {
+  body {
+    font-size: 10pt;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .main-container {
+    flex-direction: row;
+    height: auto;
+    page-break-before: always;
+  }
+
+  .left-container {
+    width: 35%; 
+    background-color: #504136 !important;
+    color: white !important;
+    padding-right: 10px; 
+    box-sizing: border-box; 
+  }
+
+  .right-container {
+    width: 65%;
+  }
+
+  .right-container, .summary h3, .declaration h3, .project-work h3 {
+    font-size: 1.2rem;
+  }
+
+  .content-details, .technical-skills {
+    width: 100%;
+    background-color: #645039 !important;
+    color: white !important;
+  }
+
+  .cv-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 1rem;
+  }
+
+  .cv-name h3, .cv-profession p {
+    font-size: 1rem;
+  }
+
+  .headings h3, .objective h3, .technical-skills h3 ,.personal-profile h3,.educational-qualification h3,.experience h3 {
+    font-size: 1.2rem;
+  }
+
+  .skill label, .progress-bar {
+    font-size: 10pt;
+  }
+
+  .progress-bar {
+    width: 60%;
+  }
+
+  .technical-skills h3{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-left: 1rem;
+  }
+  
+  .objective h3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+   }
+   .objective p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    
+   } 
+
+   .content-details{
+    width: 110%; 
+   }
+   .content-details h3{
+    width: 110%; 
+   }
+  .profile-item span, .education-date, .education-detail, .experience ul li, .summary ul li, .project-work ul li, .declaration ul li {
+    font-size: 10pt;
+  }
+
+  .content-details .list ul li, .objective p, .technical-skills .skill label, .progress-bar, .profile-item span, .education-detail, .experience ul li, .summary p, .project-work ul li, .declaration ul li {
+    font-size: 10pt;
+  }
+
+  .signature {
+    margin-right: 1rem;
+  }
+
+  /* Ensure contact icons align properly */
+  .content-details i{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  
+  }
+
+  .contact-info span, .contact-info img {
+    display: inline-block;
+  }
+
+  .contact-info img {
+    width: 12px;
+    height: 12px;
+    object-fit: cover;
+  }
+}
