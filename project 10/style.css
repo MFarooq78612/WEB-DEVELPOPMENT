@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background: #0089b7;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+nav li {
+    font-size: 2.5rem;
+    border-bottom: 0.4rem transparent solid;
+    transition: 0.3s ease-in-out;
+}
+
+nav li:hover {
+    border-bottom: 0.4rem #fff700 solid;
+    transition: 0.3s ease-in-out;
+}
+
+#hero {
+    background: #003d62;
+    padding: 4rem 0;
+    border-bottom: 5px solid #0089b7;
+}
+
+#hero .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero_content {
+    display: grid;
+    place-items: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+.hi_text {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #fff700;
+}
+
+.name_text {
+    font-size: 5rem;
+}
+
+#hero h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    overflow: hidden;
+    border-right: 0.15rem solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+#project{
+    background: #003251
+}
+#project h2{
+    font-size: 6rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+.project_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(320px,1fr));
+    gap: 2rem;
+}
+.grid_item{
+    display: grid;
+    place-items: center;
+}
+.card{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+}
+.card_content{
+padding: 2rem;
+position: relative;
+top: -6.5rem;
+margin-bottom: -6.5rem;
+transition: 0.5 ease-in-out;
+transform: translateY(100px);
+}
+.card:hover .card_content{
+background: white;
+color: #003251;
+transform: translateY(0px);
+}
+.card:hover img{
+    transform: scale(1.05);
+    transition: 0.4s ease-in-out;
+    opacity: 0.8;
+}
+.card_content h3{
+    text-align: center;
+    font-size: 2.5rem;
+}
+#contact{
+    background: #003d62;
+}
+#contact h2{
+    font-size: 7rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+#contact .container {
+height: 90vh;
+display: flex;
+flex-direction: column;
+gap: 4rem;
+justify-content: center;
+}
+.top_contact{
+    max-width: 800px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit,minmax(80px,1fr));
+}
+.contact_way{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.contact_way i{
+    font-size: 4rem;
+}
+.contact_way h3{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.bottom_contact{
+    max-width: 400px;
+    gap: 2rem;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit,minmax(80px,1fr));
+}
+footer{
+    background: #003251;
+    padding: 2rem;
+    color: white;
+    font-size: 2.2rem;
+    text-align: center;
+
+}
+
+@media(max-width:786px){
+    html{
+        font-size: 40%;
+    }
+    #hero .container{
+        flex-direction: column;
+    }
+    .hero_image{
+        display: grid;
+        place-items: center;
+    }
+    #contact .container{
+        height: 70vh;
+    }
+}
+
+@media(max-width:500px){
+    html{
+        font-size: 32%;
+    }
+    #hero .container{
+        flex-direction: column;
+    }
+    .hero_image{
+        display: grid;
+        place-items: center;
+    }
+    #contact .container{
+        height: 50vh;
+    }
+}

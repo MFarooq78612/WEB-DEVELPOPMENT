@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+header{
+    background-color: #270082;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 20px 0;
+   
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    font-weight: 400;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 600;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 2s ease-in;
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in;
+}
+.hero_section{
+    background-image: url(images/hero_image\ \(1\).png);
+    height: 100vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+}
+.hero_section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero_section h1{
+    font-size: 96px;
+}
+.hero_section h3{
+    font-size: 32px;
+    
+}
+.hero_section p{
+    font-size: 18px;
+    
+}
+.music_section{
+    padding-top: 50px;
+    background: #281154;
+}
+.music_section .container{
+display: flex;
+flex-direction: column;
+gap: 30px;
+justify-content: center;
+align-items: center;
+color: white;
+}
+.ipad-iphone-img{
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+}
+.primary_btn{
+    background-color: rgb(244, 41, 41);
+    color: white;
+}
+.secondary_btn{
+    background-color: #270082;
+    color: white;
+    font-size: 16px;
+}
+.music_section .container h4{
+    text-align: center;
+    font-weight: 400;
+    }
+.about_music{
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #000000;
+   
+}
+.video_section{
+    background-image: url(images/video.png);
+    min-height: 800px;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+}
+.video_section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+
+}
+.hero_section,.video_section{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gift_section{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+    color: #281154;
+    gap: 50px;
+}
+.gift_content{
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+.redeem_btn{
+    background-color: #270082;
+    color: white;
+    font-size: 16px;
+    align-self: self-start;
+}
+.footer-upper{
+    background-color: #281154;
+    padding: 20px;
+}
+.footer-upper .container{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.footer-upper h4{
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+.footer-lower{
+    background-color: #270082;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+@media (max-width:786px){
+    nav{
+        flex-direction: column;
+        font-size: 14px;
+
+    }
+    .hero_section{
+        flex-direction: column;
+        margin-top: -80px;
+    }
+    .hero_section h1{
+        font-size: 34px;
+        font-weight: 400;
+    }
+    .hero_section h3 {
+        flex-direction: column;
+        font-size: 20px;
+      
+    }
+    .hero_section p{
+        font-size: 16px;
+    }
+    .music_section{
+        flex-direction: column;
+        font-size: 16px;
+    }
+}

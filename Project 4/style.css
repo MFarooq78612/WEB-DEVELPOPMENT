@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-section {
+    background-image: url(images/developer.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-container {
+    color: rgb(232, 226, 226);
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-left: 16px;
+}
+
+.lg_text {
+    font-size: 72px;
+    font-weight: 400;
+}
+
+.heading1 {
+    font-size: 3rem;
+}
+
+.black_box {
+    background-color: black;
+    padding: 20px;
+
+}
+
+.black_box h2 {
+    font-size: 72px;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.black_box h2 span {
+    font-weight: 400;
+    font-size: 96px;
+}
+
+.work {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    max-width: 1100px;
+    margin: 50px auto;
+
+}
+
+.grid-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 320px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    animation: 0.6s ease-in-out;
+
+}
+
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+    animation: 0.3s ease-in-out;
+}
+
+.headingone {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.paraone {
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+
+.card_content {
+    padding: 10px;
+}
+
+.bottom_section {
+    display: flex;
+}
+
+.contact {
+    background-color: #515603;
+}
+
+.about {
+    background-color: #722300;
+}
+
+.contact,
+.about {
+    height: 300px;
+    padding: 32px;
+    color: white;
+}
+
+.contact h2,
+.about h2 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.contact p,
+.about p {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #000;
+    padding: 20px;
+    color: white;
+}
+
+@media (max-width:786px) {
+    .hero-section {
+        min-height: 50vh;
+    }
+
+    .text-container {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .lg_text {
+        font-size: 32px;
+    }
+    .lg_text h1 span{
+        font-size: 16px;
+    }
+    .heading1{
+        font-size: 20px;
+    }
+
+    .black_box h2 {
+        font-size: 24px;
+    }
+
+    .black_box h2 span {
+        font-weight: 400;
+        font-size: 28px;
+    }
+    .bottom_section{
+        flex-direction: column;
+    }
+    .contact h2 ,
+.about h2 {
+    text-align: center;
+    font-size: 26px;
+}
+
+.contact p ,
+.about p {
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+}
